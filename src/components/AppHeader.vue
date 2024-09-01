@@ -26,7 +26,7 @@ export default {
     .content {
         width: 100%;
         height: 60px;
-        background-color: red;
+        background-color: blueviolet;
         border: 1px solid black;
     }
 
