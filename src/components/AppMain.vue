@@ -27,7 +27,7 @@ export default {
                         <div class="col-12 d-flex align-items-center flex-column text-white">
                             <h2>Commence Business</h2>
                             <h1 class="pb-4 font-10">Distant Mentoring Program</h1>
-                            <strong class="bg-white color-2 rounded px-5 py-3">Download free guidebook &#8594;</strong>
+                            <strong class="color-2 rounded px-5 py-3">Download free guidebook &#8594;</strong>
                         </div>
                     </div>
                 </div>
@@ -248,6 +248,14 @@ export default {
         background-image: url(../assets/img/home-3-hero-bg.jpg);
         background-size: cover;
         min-height: 650px;
+        strong {
+            background-color: #fff;
+        }
+        strong:hover {
+            color: white;
+            background-color: $color-2;
+            cursor: pointer;
+        }                                                                   
     }
 
     .padding-jumbo {

@@ -11,7 +11,7 @@ export default {
 </script>
 
 <template>
-    <div class="col-4">
+    <div class="col-4 online">
         <div class="bg-white card-container">
             <img :src="img" alt="" class="w-100 pb-4">
             <div class="pb-5 px-4">
@@ -43,6 +43,12 @@ span {
 .card-container {
     border-radius: 5px;
 }
+
+    p:hover {
+        strong {
+            color: $color-2;
+        }
+    }       
 
 .color-2 {
     color: $color-2;

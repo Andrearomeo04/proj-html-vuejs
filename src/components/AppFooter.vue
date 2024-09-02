@@ -1,6 +1,15 @@
 <script>
+import footerData from '../data/footer.json'
+import footermenu from './footermenu.vue';
 export default {
-    
+    components: {
+        footermenu
+    },
+    data() {
+        return {
+            footerData
+        }
+    }
 }
 </script>
 
@@ -9,15 +18,13 @@ export default {
         <div class="footer-bg py-5">
             <div class="container">
                 <div class="row g-0">
-                    <div class="col-6">
-                        <div class="content"></div>
-                    </div>
-                    <div class="col-3">
-                        <div class="content"></div>
-                    </div>
-                    <div class="col-3">
-                        <div class="content"></div>
-                    </div>
+                    <footermenu 
+                        v-for="(info, index) in footerData"
+                        :key="index"
+                        :address="info.address"
+                        :explore="info.explore"
+                        :information="info.information"
+                    /> 
                 </div>
                 <div class="row pt-4">
                     <div class="col-12">
@@ -39,6 +46,6 @@ export default {
     }
 
     .footer-bg {
-        background-color: $color-3;
+        background-color: $color-9;
     }
 </style>
