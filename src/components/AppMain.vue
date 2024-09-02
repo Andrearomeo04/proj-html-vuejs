@@ -1,13 +1,17 @@
 <script>
 import Blogs from '../data/blogs.json'
 import cardsBlog from './cardsBlog.vue';
+import courses from '../data/courses.json'
+import cardsCourses from './cardsCourses.vue';
 export default {
     components: {
-        cardsBlog
+        cardsBlog,
+        cardsCourses
     },
     data () {
         return {
-            Blogs
+            Blogs,
+            courses
         }
     }
 }
@@ -97,15 +101,15 @@ export default {
                     </div>
                 </div>
                 <div class="row mt-5">
-                    <div class="col-4">
-                        <div class="content"></div>
-                    </div>
-                    <div class="col-4">
-                        <div class="content"></div>
-                    </div>
-                    <div class="col-4">
-                        <div class="content"></div>
-                    </div>
+                    <cardsCourses 
+                        v-for="(card, index) in courses"
+                        :key="index"
+                        :img="card.img"
+                        :profession="card.price"
+                        :title="card.title"
+                        :lessons="card.lessons"
+                        :students="card.students"
+                    />
                 </div>
                 <div class="row mt-5">
                     <div class="col-12">
@@ -159,7 +163,7 @@ export default {
                         :img="card.img"
                         :profession="card.profession"
                         :title="card.title"
-                        :date="card.views"
+                        :date="card.date"
                         :views="card.views"
                     />
                 </div>
