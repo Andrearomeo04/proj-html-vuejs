@@ -63,8 +63,10 @@ export default {
         <section>
             <div class="container">
                 <div class="row g-0">
-                    <div class="col-7">
-                        <div class="content"></div>
+                    <div class="col-7 position-relative skills">
+                        <img src="../assets/img/stock-full-hd-11-670x450.jpg" alt="">
+                        <img src="../assets/img/maxcoach-shape-07.png" alt="">
+                        <img src="../assets/img/maxcoach-shape-05.png" alt="">
                     </div>
                     <div class="col-5">
                         <div class="content"></div>
@@ -184,6 +186,21 @@ export default {
 
     .stats {
         margin-top: 100px;
+    }
+
+    .skills {
+        img:nth-child(2) {
+            position: absolute;
+            bottom: -6rem;
+            right: 4rem;
+            z-index: -1;
+        }
+        img:nth-child(3) {
+            position: absolute;
+            top: 3rem;
+            left: -7rem;
+            z-index: -1;
+        }
     }
 
     .col-8 {
