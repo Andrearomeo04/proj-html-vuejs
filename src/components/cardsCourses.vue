@@ -12,11 +12,15 @@ export default {
 
 <template>
     <div class="col-4">
-        <img :src="img" alt="" class="w-100 pb-4">
-        <span class="color-2">{{ price }}</span>
-        <p class="font-5"><strong>{{ title }}</strong></p>
-        <span><i class="fa-regular fa-file"></i> {{ lessons }}</span>
-        <span class="ms-4"><i class="fa-regular fa-user"></i> {{ students }}</span>
+        <div class="bg-white card-container">
+            <img :src="img" alt="" class="w-100 pb-4">
+            <div class="pb-5 px-4">
+                <strong class="color-2 font-8">{{ price }}</strong>
+                <p class="font-8"><strong>{{ title }}</strong></p>
+                <span class="color-8"><i class="fa-regular fa-file"></i> {{ lessons }}</span>
+                <span class="ms-4 color-8"><i class="fa-regular fa-user"></i> {{ students }}</span>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -27,7 +31,7 @@ export default {
     cursor: pointer;
     border-radius: 5px;
 }
-.font-5 {
+.font-8 {
     font-size: $font-8;
 }
 span {
@@ -35,5 +39,15 @@ span {
         font-size: $font-2;
         margin-right: 5px;
     }
+}
+.card-container {
+    border-radius: 5px;
+}
+
+.color-2 {
+    color: $color-2;
+}
+.color-8 {
+    color: $color-8;
 }
 </style>

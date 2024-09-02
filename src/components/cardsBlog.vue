@@ -15,8 +15,8 @@ export default {
         <img :src="img" alt="" class="w-100 pb-4">
         <span>{{ profession }}</span>
         <p class="font-5"><strong>{{ title }}</strong></p>
-        <span><i class="fa-regular fa-calendar"></i> {{ date }}</span>
-        <span class="ms-4"><i class="fa-regular fa-eye"></i> {{ views }}</span>
+        <span class="color-8"><i class="fa-regular fa-calendar"></i> {{ date }}</span>
+        <span class="ms-4 color-8"><i class="fa-regular fa-eye"></i> {{ views }}</span>
     </div>
 </template>
 
@@ -35,5 +35,8 @@ span {
         font-size: $font-2;
         margin-right: 5px;
     }
+}
+.color-8 {
+    color: $color-8;
 }
 </style>
