@@ -27,8 +27,8 @@ export default {
                     /> 
                 </div>
                 <div class="row pt-4">
-                    <div class="col-12">
-                        <div class="content"></div>
+                    <div class="col-12 text-center text-white">
+                        <i class="fa-regular fa-copyright"></i> 2020 Maxcoach. All Rights Reserved
                     </div>
                 </div>
             </div>
