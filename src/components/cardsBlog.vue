@@ -11,19 +11,29 @@ export default {
 </script>
 
 <template>
-    <div>
-        <img :src="img" alt="" class="w-100">
-        <p>{{ profession }}</p>
-        <p><strong>{{ title }}</strong></p>
-        <span>{{ date }}</span>
-        <span>{{ views }}</span>
+    <div class="col-4">
+        <img :src="img" alt="" class="w-100 pb-4">
+        <span>{{ profession }}</span>
+        <p class="font-5"><strong>{{ title }}</strong></p>
+        <span><i class="fa-regular fa-calendar"></i> {{ date }}</span>
+        <span class="ms-4"><i class="fa-regular fa-eye"></i> {{ views }}</span>
     </div>
 </template>
 
 <style lang="scss" scoped>
+@use '../styles/partials/variables' as *;
     img {
     object-fit: cover;
-    object-position: top;
     cursor: pointer;
+    border-radius: 5px;
+}
+.font-5 {
+    font-size: $font-8;
+}
+span {
+    i {
+        font-size: $font-2;
+        margin-right: 5px;
+    }
 }
 </style>

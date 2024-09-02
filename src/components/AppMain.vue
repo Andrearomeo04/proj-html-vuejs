@@ -153,15 +153,15 @@ export default {
                     </div>
                 </div>
                 <div class="row mt-5">
-                    <div class="col-4">
-                        <div class="content"></div>
-                    </div>
-                    <div class="col-4">
-                        <div class="content"></div>
-                    </div>
-                    <div class="col-4">
-                        <div class="content"></div>
-                    </div>
+                    <cardsBlog 
+                        v-for="(card, index) in Blogs"
+                        :key="index"
+                        :img="card.img"
+                        :profession="card.profession"
+                        :title="card.title"
+                        :date="card.views"
+                        :views="card.views"
+                    />
                 </div>
             </div>
         </section>
