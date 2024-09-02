@@ -97,7 +97,7 @@ export default {
     
             <!-- latest online courses section -->
             <section>
-                <div class="container padding-jumbo">
+                <div class="container padding-jumbo online-courses">
                     <div class="row">
                         <div class="col-12 text-center">
                             <h6>JOIN MAXCOACH AT BEST</h6>
@@ -128,9 +128,9 @@ export default {
         <div class="bg-col-6">
 
             <!-- Testimonials section -->
-            <section>
+            <section class="testimonials">
                 <div class="container mt-5">
-                    <div class="row g-0">
+                    <div class="row g-0 position-relative">
                         <div class="col-5">
                             <h6>TESTIMONIALS</h6>
                             <strong class="font-11">Why Do People <br> <span class="color-2 no-bold">*Hearts*</span> Us?</strong>
@@ -139,12 +139,23 @@ export default {
                         </div>
                         <div class="col-7 behind-text p-5">
                             <h4>Professional team of specialists anmd passionate mentors at reach</h4>
-                            <p>i need to get a certification for english proficiency and MaxCoach is my best choice. their tutors are smart and professional when dealing with students.</p>
+                            <p class="fs-5">i need to get a certification for english proficiency and MaxCoach is my best choice. their tutors are smart and professional when dealing with students.</p>
                             <div class="d-flex pt-5">
                                 <img src="../assets/img/testimonial-avata-01.jpg" alt="" class="rounded-circle">
                                 <div class="pt-3 ps-4">
                                     <h6>MADLEY PONDOR</h6>
                                     <p>/IT Specialist</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-7 behind-index p-5">
+                            <h4 class="font-4">The MaxCoach team works really hard to ensure high level of quality </h4>
+                            <p class="fs-5">i am happy with their arrangement of lessons and subjects. they Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis rem sit magni libero voluptatum voluptatem exercitationem unde amet fuga! Minus, vero fugiat eius consequuntur autem error commodi deserunt nisi pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, placeat velit. Error amet atque qui incidunt fugit nostrum culpa minus, nihil molestias, labore, est consequatur vel accusantium blanditiis aspernatur aperiam? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad, odio est, quaerat quisquam praesentium magnam totam perferendis sint optio vitae laborum labore repellendus</p>
+                            <div class="d-flex pt-5">
+                                <img src="../assets/img/testimonial-avata-02.jpg" alt="" class="rounded-circle">
+                                <div class="pt-3 ps-4">
+                                    <h6>MINA HOLLACE</h6>
+                                    <p>/Freelancer</p>
                                 </div>
                             </div>
                         </div>
@@ -154,7 +165,7 @@ export default {
     
             <!-- here to transform you section -->
             <section>
-                <div class="container mt-5">
+                <div class="container transform">
                     <div class="row g-0">
                         <div class="col-7">
                             <div class="content"></div>
@@ -287,11 +298,33 @@ export default {
         }
     }
 
+    .testimonials {
+        margin-top: 300px;
+    }
+
     .behind-text {
-        box-shadow: 0 0 40px rgba(0, 0, 0, 0.151);
+        box-shadow: 0 0px 40px rgba(0, 0, 0, 0.151);
+        background-color: #fff;
         img {
             width: 80px;
         }
+    }
+    .behind-index {
+        box-shadow: 0 0 40px rgba(0, 0, 0, 0.151);
+        position: absolute;
+        top: -10rem;
+        right: 5rem;
+        z-index: -5;
+        max-width: 600px;
+        background-color: #fff;
+        opacity: 0.5;
+        img {
+            width: 80px;
+        }
+    }
+
+    .transform {
+        margin-top: 300px;
     }
 
     .col-8 {
@@ -338,8 +371,15 @@ export default {
         z-index: -10;
     }
 
+    .font-1 {
+        font-size: $font-1;
+    }
+
     .font-2 {
         font-size: $font-2;
+    }
+    .font-3 {
+        font-size: $font-3;
     }
 
     .font-11 {
