@@ -1,6 +1,15 @@
 <script>
+import Blogs from '../data/blogs.json'
+import cardsBlog from './cardsBlog.vue';
 export default {
-    
+    components: {
+        cardsBlog
+    },
+    data () {
+        return {
+            Blogs
+        }
+    }
 }
 </script>
 
@@ -138,8 +147,9 @@ export default {
         <section>
             <div class="container mt-5">
                 <div class="row">
-                    <div class="col-12">
-                        <div class="content"></div>
+                    <div class="col-12 text-center">
+                        <h6 class="font-2">READ FOR MORE JOYMENT</h6>
+                        <strong class="font-11">Latest from <span class="color-2 no-bold">Our Blogs</span></strong>
                     </div>
                 </div>
                 <div class="row mt-5">
@@ -267,6 +277,10 @@ export default {
 
     .bg-col-2 {
         background-color: $color-2;
+    }
+
+    .font-2 {
+        font-size: $font-2;
     }
 
     .font-11 {
