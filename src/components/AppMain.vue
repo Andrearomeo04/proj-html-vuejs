@@ -39,8 +39,21 @@ export default {
                     </div>
                 </div>
                 <div class="row g-0">
-                    <div class="col-6 offset-3 p-4">
-                        <div class="content"></div>
+                    <div class="col-8 offset-2 p-4 stats">
+                        <ul class="list-unstyled d-flex justify-content-around">
+                            <li>
+                                <strong class="color-2 d-flex justify-content-center font-11">129+</strong>
+                                <p>ENROLLED LEANERS</p>
+                            </li>
+                            <li>
+                                <strong class="color-2 d-flex justify-content-center font-11">80</strong>
+                                <p>ENROLLED LEANERS</p>
+                            </li>
+                            <li>
+                                <strong class="color-2 d-flex justify-content-center font-11">4%</strong>
+                                <p>ENROLLED LEANERS</p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -167,6 +180,10 @@ export default {
 
     .margin-jumbo {
         margin-top: 180px;
+    }
+
+    .stats {
+        margin-top: 100px;
     }
 
     .col-8 {
