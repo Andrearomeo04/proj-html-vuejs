@@ -87,7 +87,7 @@ export default {
                         </div>
                         <div class="col-5 d-flex flex-column justify-content-center">
                             <h6>HOW WE WORK</h6>
-                            <strong class="font-11">Upgrade Your <br> Skills <span class="color-2 no-bold">Upgrade <br> Your Life</span></strong>
+                            <strong class="font-11">Upgrade Your <br> Skills <span class="color-2 fw-normal">Upgrade <br> Your Life</span></strong>
                             <p>Opening up more opportunities in front of you to get the ticket to more enjoyable door in life. Getting equipped with new skills for new sets of insights into your career. <br> MaxCoach accompany learners in every stage of learning.</p>
                             <a href="#" class="text-decoration-none text-black"><strong>Download free guidebook &#8594;</strong></a>
                         </div>
@@ -101,7 +101,7 @@ export default {
                     <div class="row">
                         <div class="col-12 text-center">
                             <h6>JOIN MAXCOACH AT BEST</h6>
-                            <strong class="font-11">Latest Online <span class="color-2 no-bold">Courses</span></strong>
+                            <strong class="font-11">Latest Online <span class="color-2 fw-normal">Courses</span></strong>
                         </div>
                     </div>
                     <div class="row mt-5">
@@ -116,8 +116,13 @@ export default {
                         />
                     </div>
                     <div class="row mt-5">
-                        <div class="col-12">
-                            <div class="content"></div>
+                        <div class="col-12 text-center dots">
+                            <i class="fa-solid fa-circle"></i>
+                            <i class="fa-regular fa-circle"></i>
+                            <i class="fa-regular fa-circle"></i>
+                            <i class="fa-regular fa-circle"></i>
+                            <i class="fa-regular fa-circle"></i>
+                            <p>Control your personal preference settings to get notified about <br> appropriate courses. <a href="#" class="text-decoration-none text-black"><strong>Download free guidebook &#8594;</strong></a></p>
                         </div>
                     </div>
                 </div>
@@ -133,7 +138,7 @@ export default {
                     <div class="row g-0 position-relative">
                         <div class="col-5">
                             <h6>TESTIMONIALS</h6>
-                            <strong class="font-11">Why Do People <br> <span class="color-2 no-bold">*Hearts*</span> Us?</strong>
+                            <strong class="font-11">Why Do People <br> <span class="color-2 fw-normal">*Hearts*</span> Us?</strong>
                             <p>seeking for verbals of our service quality? Find them here. Everything is transparent and straightforward for your sense of justification.</p>
                             <a href="#" class="text-decoration-none text-black"><strong>View all &#8594;</strong></a>
                         </div>
@@ -167,11 +172,18 @@ export default {
             <section>
                 <div class="container transform">
                     <div class="row g-0">
-                        <div class="col-7">
-                            <div class="content"></div>
+                        <div class="col-7 trans-img position-relative">
+                            <img src="../assets/img/home-3-team-image.png" alt="">
+                            <img src="../assets/img/maxcoach-shape-05.png" alt="">
+                            <img src="../assets/img/maxcoach-shape-01.png" alt="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="200" height="202"><path class="elementor-shape-fill" d="M139.374 198.088c16.328 8.906 51.35-1.087 58.304-39.038 7.15-39.022-13.182-40.052-9.633-54.248 14.243-21.15 16.782-48.14 2.028-64.387-36.503-38.024-45.629 7.604-76.048-20.28C101.727 7.837 83.1-6.735 56.23 3.405 18.239 17.74 27.33 47.659 27.33 69.313c0 7.624-24.216 21.957-26.87 41.573-3.346 24.734 12.168 57.29 26.87 68.443 23.322 26.363 59.318 20.28 75.541 11.154 13.931-7.836 25.35 1.52 36.503 7.605z"/></svg>
+                            <img src="../assets/img/maxcoach-shape-07.png" alt="">
                         </div>
                         <div class="col-5">
-                            <div class="content"></div>
+                            <h6>EVERYTHING IN MAXCOACH</h6>
+                            <strong class="font-11">We're Here To <span class="color-2 fw-normal">Transform</span>You!</strong>
+                            <p class="py-3">As learbers, people can enjoy great companionship from MaxCoach mentors and educators. We can help you develop and grow at your best.</p>
+                            <strong class="bg-col-2 text-white rounded px-5 py-3">Get free guide</strong>
                         </div>
                     </div>
                 </div>
@@ -180,11 +192,11 @@ export default {
 
         <!-- latest from our blogs section -->
         <section>
-            <div class="container mt-5">
+            <div class="container blogs">
                 <div class="row">
                     <div class="col-12 text-center">
                         <h6 class="font-2">READ FOR MORE JOYMENT</h6>
-                        <strong class="font-11">Latest from <span class="color-2 no-bold">Our Blogs</span></strong>
+                        <strong class="font-11">Latest from <span class="color-2 fw-normal">Our Blogs</span></strong>
                     </div>
                 </div>
                 <div class="row mt-5">
@@ -206,7 +218,7 @@ export default {
             <div class="container">
                 <div class="row mt-5">
                     <div class="col-12 d-flex align-items-center flex-column text-center position-relative letter">
-                        <strong class="font-11">Subscribe <span class="color-2 no-bold">Newsletters</span></strong>
+                        <strong class="font-11">Subscribe <span class="color-2 fw-normal">Newsletters</span></strong>
                         <p>enter your email address to register to uor newsletter subscription <br> delivered on a regular basis</p>
                         <div>
                             <form class="d-flex">
@@ -280,6 +292,50 @@ export default {
         }
     }
 
+    .dots {
+        i {
+            margin: 0 10px 40px;
+        }
+    }
+
+    .trans-img {
+        img:nth-child(1) {
+            position: absolute;
+            top: -7rem;
+            right: 5rem;
+        }
+        img:nth-child(2) {
+            position: absolute;
+            top: 1rem;
+            left:2rem;
+        }
+
+        img:nth-child(3) {
+            position: absolute;
+            bottom: -3rem;
+            left:-12rem;
+        }
+        img:nth-child(5) {
+            position: absolute;
+            bottom: -15rem;
+            right:14rem;
+            z-index: -5;
+        }
+        svg {
+            position: absolute;
+            top: -5rem;
+            left: 7rem;
+            z-index: -5;
+            width: 100%;
+            margin-top: -1px;
+            .elementor-shape-fill {
+                fill: $color-2; 
+                opacity: 0.5;
+            
+    }
+        }
+    }
+
     .letter {
         form {
             input {
@@ -300,6 +356,10 @@ export default {
 
     .testimonials {
         margin-top: 300px;
+    }
+
+    .blogs {
+        margin-top: 400px;
     }
 
     .behind-text {
