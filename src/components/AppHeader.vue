@@ -1,6 +1,15 @@
 <script>
+import mainMenu from '../data/headerMenues.json'
+import headerMenu from '../components/headermenu.vue'
 export default {
-    
+    components: {
+        headerMenu
+    },
+    data () {
+        return {
+            mainMenu
+        }
+    }
 }
 </script>
 
@@ -8,11 +17,15 @@ export default {
     <div>
         <div class="container">
             <div class="row g-0">
-                <div class="col-4">
-                    <div class="content"></div>
+                <div class="col-4 d-flex">
+                    <headerMenu 
+                        v-for="(info, index) in mainMenu"
+                        :key="index"
+                        :text="info.text"
+                    />
                 </div>
                 <div class="col-4">
-                    <div class="content"></div>
+                    s
                 </div>
                 <div class="col-4">
                     <div class="content"></div>
