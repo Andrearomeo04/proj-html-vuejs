@@ -125,34 +125,47 @@ export default {
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" height="100"><path class="elementor-shape-fill" d="M0 0v100h100V0Q50 200 0 0"/></svg>
         </div>
 
+        <div class="bg-col-6">
 
-        <!-- Testimonials section -->
-        <section>
-            <div class="container mt-5">
-                <div class="row g-0">
-                    <div class="col-5">
-                        <div class="content"></div>
-                    </div>
-                    <div class="col-7">
-                        <div class="content"></div>
+            <!-- Testimonials section -->
+            <section>
+                <div class="container mt-5">
+                    <div class="row g-0">
+                        <div class="col-5">
+                            <h6>TESTIMONIALS</h6>
+                            <strong class="font-11">Why Do People <br> <span class="color-2 no-bold">*Hearts*</span> Us?</strong>
+                            <p>seeking for verbals of our service quality? Find them here. Everything is transparent and straightforward for your sense of justification.</p>
+                            <a href="#" class="text-decoration-none text-black"><strong>View all &#8594;</strong></a>
+                        </div>
+                        <div class="col-7 behind-text p-5">
+                            <h4>Professional team of specialists anmd passionate mentors at reach</h4>
+                            <p>i need to get a certification for english proficiency and MaxCoach is my best choice. their tutors are smart and professional when dealing with students.</p>
+                            <div class="d-flex pt-5">
+                                <img src="../assets/img/testimonial-avata-01.jpg" alt="" class="rounded-circle">
+                                <div class="pt-3 ps-4">
+                                    <h6>MADLEY PONDOR</h6>
+                                    <p>/IT Specialist</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- here to transform you section -->
-        <section>
-            <div class="container mt-5">
-                <div class="row g-0">
-                    <div class="col-7">
-                        <div class="content"></div>
-                    </div>
-                    <div class="col-5">
-                        <div class="content"></div>
+            </section>
+    
+            <!-- here to transform you section -->
+            <section>
+                <div class="container mt-5">
+                    <div class="row g-0">
+                        <div class="col-7">
+                            <div class="content"></div>
+                        </div>
+                        <div class="col-5">
+                            <div class="content"></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
 
         <!-- latest from our blogs section -->
         <section>
@@ -271,6 +284,13 @@ export default {
             position: absolute;
             top: -5rem;
             right: 7rem;
+        }
+    }
+
+    .behind-text {
+        box-shadow: 0 0 40px rgba(0, 0, 0, 0.151);
+        img {
+            width: 80px;
         }
     }
 
