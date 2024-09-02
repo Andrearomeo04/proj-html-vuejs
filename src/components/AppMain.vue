@@ -60,16 +60,20 @@ export default {
         </section>
 
         <!-- upgrade your skill section -->
-        <section>
+        <section class="mt-5">
             <div class="container">
                 <div class="row g-0">
                     <div class="col-7 position-relative skills">
                         <img src="../assets/img/stock-full-hd-11-670x450.jpg" alt="">
                         <img src="../assets/img/maxcoach-shape-07.png" alt="">
                         <img src="../assets/img/maxcoach-shape-05.png" alt="">
+                        <img src="../assets/img/icon-youtube-play.png" alt="">
                     </div>
                     <div class="col-5">
-                        <div class="content"></div>
+                        <h6>HOW WE WORK</h6>
+                        <strong class="font-11">Upgrade Your <br> Skills <span class="color-2 no-bold">Upgrade <br> Your Life</span></strong>
+                        <p>Opening up more opportunities in front of you to get the ticket to more enjoyable door in life. Getting equipped with new skills for new sets of insights into your career. <br> MaxCoach accompany learners in every stage of learning.</p>
+                        <a href="#" class="text-decoration-none text-black"><strong>Download free guidebook &#8594;</strong></a>
                     </div>
                 </div>
             </div>
@@ -153,11 +157,20 @@ export default {
         </section>
 
         <!-- news letter section -->
-        <section>
+        <section class="margin-y-1">
             <div class="container">
                 <div class="row mt-5">
-                    <div class="col-12">
-                        <div class="content"></div>
+                    <div class="col-12 d-flex align-items-center flex-column text-center position-relative letter">
+                        <strong class="font-11">Subscribe <span class="color-2 no-bold">Newsletters</span></strong>
+                        <p>enter your email address to register to uor newsletter subscription <br> delivered on a regular basis</p>
+                        <div>
+                            <form class="d-flex">
+                                <input class="form-control rounded-end-0 border-0 color-6 py-2" type="search" placeholder="Enter your email" aria-label="Search">
+                                <button class="btn bg-col-2 text-white rounded-start-0 border-start-0 rounded-end px-3" type="submit">Subscribe</button>
+                            </form>
+                        </div>
+                        <img src="../assets/img/maxcoach-shape-02.png" alt="">
+                        <img src="../assets/img/maxcoach-shape-09.png" alt="">
                     </div>
                 </div>
             </div>
@@ -201,6 +214,29 @@ export default {
             left: -7rem;
             z-index: -1;
         }
+        img:nth-child(4) {
+            position: absolute;
+            top: 12rem;
+            left: 18rem;
+        }
+    }
+
+    .letter {
+        form {
+            input {
+                width: 500px;
+            }
+        }
+        img:nth-of-type(1) {
+            position: absolute;
+            top: 2rem;
+            right: 7rem;
+        }
+        img:nth-of-type(2) {
+            position: absolute;
+            top: -5rem;
+            right: 7rem;
+        }
     }
 
     .col-8 {
@@ -225,6 +261,13 @@ export default {
     .color-2 {
         color: $color-2;
     }
+    .color-6 {
+        background-color: $color-6;
+    }
+
+    .bg-col-2 {
+        background-color: $color-2;
+    }
 
     .font-11 {
         font-size: $font-11;
@@ -232,5 +275,9 @@ export default {
 
     .font-10 {
         font-size: $font-10;
+    }
+
+    .margin-y-1 {
+        margin: 100px 0;
     }
 </style>
