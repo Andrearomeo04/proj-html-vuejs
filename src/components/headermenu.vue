@@ -8,8 +8,8 @@ export default {
 
 <template>
     <div>
-        <ul class="list-unstyled">
-            <li class="mx-2">
+        <ul class="list-unstyled mb-0">
+            <li class="mx-4">
                 {{ text }}
             </li>
         </ul>

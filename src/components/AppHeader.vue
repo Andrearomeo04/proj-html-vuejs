@@ -15,8 +15,8 @@ export default {
 
 <template>
     <div>
-        <div class="container">
-            <div class="row g-0">
+        <div class="container-fluid px-5">
+            <div class="row g-0 align-items-center py-2">
                 <div class="col-4 d-flex">
                     <headerMenu 
                         v-for="(info, index) in mainMenu"
@@ -24,8 +24,8 @@ export default {
                         :text="info.text"
                     />
                 </div>
-                <div class="col-4">
-                    s
+                <div class="col-4 d-flex justify-content-center">
+                    <img src="../assets/img/dark-logo.png" alt="dark-logo">
                 </div>
                 <div class="col-4">
                     <div class="content"></div>
@@ -41,6 +41,10 @@ export default {
         height: 60px;
         background-color: blueviolet;
         border: 1px solid black;
+    }
+
+    img {
+        width: 150px;
     }
 
 </style>
